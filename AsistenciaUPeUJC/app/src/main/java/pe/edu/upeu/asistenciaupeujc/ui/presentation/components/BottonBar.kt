@@ -1,4 +1,4 @@
- package pe.edu.upeu.asistenciaupeujc.ui.presentation.components
+package pe.edu.upeu.asistenciaupeujc.ui.presentation.components
 
 import android.graphics.drawable.Icon
 import androidx.compose.material3.Icon
@@ -29,7 +29,6 @@ fun BottomNavigationBar(items: List<Destinations>, navController: NavHostControl
         Destinations.Pantalla2,
         Destinations.Pantalla3,
     )*/
-
     var selectedItem by remember { mutableStateOf(0) }
     var currentRoute by remember { mutableStateOf(Destinations.Pantalla1.route) }
 

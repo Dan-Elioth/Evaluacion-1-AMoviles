@@ -5,6 +5,7 @@
 package pe.edu.upeu.asistencia.models;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -27,7 +28,7 @@ import lombok.NoArgsConstructor;
 @Data
 @Entity
 @Table(name = "asis_inscritos")
-public class Inscrito {
+public class Inscritox {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

@@ -4,7 +4,6 @@ import androidx.room.Entity
 import androidx.room.Ignore
 import androidx.room.PrimaryKey
 
-
 @Entity(tableName = "actividad")
 data class Actividad(
     @PrimaryKey(autoGenerate = true)
@@ -23,7 +22,6 @@ data class Actividad(
     var asisSubact: String,
     var entsal: String,
     var offlinex: String
-
 )
 
 
@@ -44,7 +42,7 @@ data class ActividadReport(
     var entsal: String,
     var offlinex: String,
     var asistenciaxs: List<Asistenciax>,
-    var inscritos: List<Inscrito>,
+    var inscritos: List<Inscritox>,
     var subactasisxs: List<Subactasisx>,
     var materialesxs: List<Materialesx>,
 )

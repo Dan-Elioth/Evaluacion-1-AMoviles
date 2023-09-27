@@ -3,51 +3,36 @@ package pe.edu.upeu.asistenciaupeujc.modelo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
-@Entity(tableName = "materialesx"
+@Entity(tableName = "inscritox"
     /*,
     foreignKeys = [ForeignKey(entity = Actividad::class, parentColumns = ["id"], childColumns = ["actividadId"], onDelete = ForeignKey.CASCADE)
     ]*/
 )
-data class Materialesx(
+data class Inscritox(
     @PrimaryKey(autoGenerate = true)
     var id: Long,
     var cui: String,
     var tipoCui: String,
-    var materEntre: String,
-    var fecha: String,
-    var horaReg: String,
-    var latituda: String,
-    var longituda: String,
-    var modFh: String,
+    var evidensPay: String,
     var offlinex: String,
     var actividadId: Long,
 )
 
-data class MaterialesxConActividad(
+data class InscritoxConActividad(
     var id: Long,
     var cui: String,
     var tipoCui: String,
-    var materEntre: String,
-    var fecha: String,
-    var horaReg: String,
-    var latituda: String,
-    var longituda: String,
-    var modFh: String,
+    var evidensPay: String,
     var offlinex: String,
     var actividadId: Long,
     var nombreActividad: String
 )
 
-data class MaterialesxReport(
+data class InscritoxReport(
     var id: Long,
     var cui: String,
     var tipoCui: String,
-    var materEntre: String,
-    var fecha: String,
-    var horaReg: String,
-    var latituda: String,
-    var longituda: String,
-    var modFh: String,
+    var evidensPay: String,
     var offlinex: String,
     var actividadId: Actividad
 )

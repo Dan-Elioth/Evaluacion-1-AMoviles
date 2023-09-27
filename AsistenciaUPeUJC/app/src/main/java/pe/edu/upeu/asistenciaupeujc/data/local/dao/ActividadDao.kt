@@ -14,30 +14,19 @@ interface ActividadDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertarActividad(actividad: Actividad)
 
-
-    //insertar en conjunto
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertarActividades(actividad: List<Actividad>)
-
-    //Modificar
 
     @Update
     suspend fun modificarActividad(actividad: Actividad)
 
-    //eliminar
-
     @Delete
     suspend fun eliminarActividad(actividad: Actividad)
 
-    //consultas
-
     @Query("select * from actividad")
-    fun reportarActividad():LiveData<List<Actividad>>
+    fun reportatActividad():LiveData<List<Actividad>>
 
-    //otro mas
     @Query("select * from actividad where id=:idx")
-    fun busccarActividad(idx: Long): LiveData<Actividad>
-
-
+    fun buscarActividad(idx: Long):LiveData<Actividad>
 
 }

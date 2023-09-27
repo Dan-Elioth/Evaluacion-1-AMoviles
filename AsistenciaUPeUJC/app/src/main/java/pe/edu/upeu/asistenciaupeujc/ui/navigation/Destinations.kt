@@ -24,11 +24,30 @@ sealed class Destinations(
     object Pantalla4 : Destinations("pantalla4", "Pantalla 4x", Icons.Filled.Face )
 
     object Pantalla5 : Destinations("pantalla5", "Pantalla 5x", Icons.Filled.AccountCircle )
-    object ActividadUI : Destinations("actividadUI", "Adm. Actividades", Icons.Filled.DateRange)
+
+    object ActividadUI: Destinations("actividadUI","Adm. Actividades", Icons.Filled.DateRange)
+
     object ActividadForm: Destinations("actividadForm?actId={actId}", "Form Actividad", Icons.Filled.Add){
         fun passId(actId:String?):String{
             return "actividadForm?actId=$actId"
         }
     }
+
+    object MaterialesxUI: Destinations("materialesxUI","Adm. Materialesxes", Icons.Filled.DateRange)
+
+    object MaterialesxForm: Destinations("MaterialesxForm?matId={matId}", "Form Materialesx", Icons.Filled.Add){
+        fun passId(matId:String?):String{
+            return "materialesxForm?matId=$matId"
+        }
+    }
+
+    object InscritoxUI: Destinations("inscritoxUI","Adm. Inscritoxes", Icons.Filled.DateRange)
+
+    object InscritoxForm: Destinations("InscritoxForm?matId={matId}", "Form Inscritox", Icons.Filled.Add){
+        fun passId(matId:String?):String{
+            return "inscritoxForm?matId=$matId"
+        }
+    }
+
 
 }

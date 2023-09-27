@@ -1,3 +1,3 @@
 package pe.edu.upeu.asistenciaupeujc.modelo
 
-class MsgGeneric(var deleted:Boolean)
+data class MsgGeneric(var deleted:Boolean)
